@@ -13,8 +13,10 @@ A personal bio link page — a single, dependency-free HTML file.
 
 ```
 $PROJECT_ROOT
-├── index.html   # The entire site — markup + styles
-├── avatar.jpg   # Profile photo
+├── index.html        # The entire site — markup + styles
+├── images/
+│   ├── avatar.jpg    # Profile photo
+│   └── favicon.ico
 └── doc/
     └── thumb.png
 ```

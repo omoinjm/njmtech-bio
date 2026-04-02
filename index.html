@@ -1,183 +1,275 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>@nhlanhlamalaza_ | Bio</title>
-  <meta name="description" content="Links to my social media and services I offer.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@nhlanhlamalaza_ | Bio</title>
+    <meta
+      name="description"
+      content="Links to my social media and services I offer."
+    />
 
-  <!-- Open Graph / Social sharing -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://njmbio.vercel.app/">
-  <meta property="og:title" content="@nhlanhlamalaza_ | Bio">
-  <meta property="og:description" content="Links to my social media and services I offer.">
-  <meta property="og:image" content="https://njmbio.vercel.app/avatar.jpg">
+    <!-- Open Graph / Social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bio.njmtech.co.za/" />
+    <meta property="og:title" content="@nhlanhlamalaza_ | Bio" />
+    <meta
+      property="og:description"
+      content="Links to my social media and services I offer."
+    />
+    <meta property="og:image" content="images/avatar.jpg" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@nhlanhlamalaza_">
-  <meta name="twitter:title" content="@nhlanhlamalaza_ | Bio">
-  <meta name="twitter:description" content="Links to my social media and services I offer.">
-  <meta name="twitter:image" content="https://njmbio.vercel.app/avatar.jpg">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@nhlanhlamalaza_" />
+    <meta name="twitter:title" content="@nhlanhlamalaza_ | Bio" />
+    <meta
+      name="twitter:description"
+      content="Links to my social media and services I offer."
+    />
+    <meta name="twitter:image" content="images/avatar.jpg" />
 
-  <link rel="icon" href="avatar.jpg" type="image/jpeg">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    <link rel="icon" href="images/favicon.ico" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(160deg, hsl(280 70% 35%), hsl(230 50% 18%), hsl(260 40% 12%));
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      color: #e8ecf2;
-      padding: 3rem 1rem;
-    }
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(
+          160deg,
+          hsl(280 70% 35%),
+          hsl(230 50% 18%),
+          hsl(260 40% 12%)
+        );
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        color: #e8ecf2;
+        padding: 3rem 1rem;
+      }
 
-    .container {
-      width: 100%;
-      max-width: 28rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.5rem;
-    }
+      .container {
+        width: 100%;
+        max-width: 28rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+      }
 
-    .avatar-ring {
-      border-radius: 50%;
-      padding: 3px;
-      background: hsl(185 80% 55%);
-    }
+      .avatar-ring {
+        border-radius: 50%;
+        padding: 3px;
+        background: hsl(185 80% 55%);
+      }
 
-    .avatar {
-      width: 96px;
-      height: 96px;
-      border-radius: 50%;
-      object-fit: cover;
-      display: block;
-    }
+      .avatar {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+      }
 
-    h1 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      letter-spacing: -0.025em;
-    }
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+      }
 
-    .bio {
-      color: hsl(215 20% 65%);
-      font-size: 0.875rem;
-      text-align: center;
-    }
+      .bio {
+        color: hsl(215 20% 65%);
+        font-size: 0.875rem;
+        text-align: center;
+      }
 
-    .links {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
+      .links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
 
-    .link-card {
-      display: grid;
-      grid-template-columns: 20px 1fr 20px;
-      align-items: center;
-      width: 100%;
-      padding: 1rem 1.25rem;
-      border-radius: 0.75rem;
-      background: hsla(220, 40%, 60%, 0.15);
-      border: 1px solid hsla(220, 40%, 70%, 0.2);
-      backdrop-filter: blur(12px);
-      text-decoration: none;
-      color: #e8ecf2;
-      transition: all 0.3s ease;
-    }
+      .link-card {
+        display: grid;
+        grid-template-columns: 20px 1fr 20px;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 1.25rem;
+        border-radius: 0.75rem;
+        background: hsla(220, 40%, 60%, 0.15);
+        border: 1px solid hsla(220, 40%, 70%, 0.2);
+        backdrop-filter: blur(12px);
+        text-decoration: none;
+        color: #e8ecf2;
+        transition: all 0.3s ease;
+      }
 
-    .link-card:hover {
-      background: hsla(220, 40%, 60%, 0.25);
-      transform: scale(1.02);
-      box-shadow: 0 8px 30px -10px rgba(0,0,0,0.3);
-    }
+      .link-card:hover {
+        background: hsla(220, 40%, 60%, 0.25);
+        transform: scale(1.02);
+        box-shadow: 0 8px 30px -10px rgba(0, 0, 0, 0.3);
+      }
 
-    .link-card svg {
-      width: 20px;
-      height: 20px;
-      color: hsl(185 80% 55%);
-      fill: none;
-      stroke: currentColor;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
+      .link-card svg {
+        width: 20px;
+        height: 20px;
+        color: hsl(185 80% 55%);
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
 
-    .link-card span {
-      text-align: center;
-      font-weight: 500;
-      font-size: 0.875rem;
-    }
+      .link-card span {
+        text-align: center;
+        font-weight: 500;
+        font-size: 0.875rem;
+      }
 
-    .socials {
-      display: flex;
-      align-items: center;
-      gap: 1.25rem;
-      margin-top: 0.5rem;
-    }
+      .socials {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+        margin-top: 0.5rem;
+      }
 
-    .socials a {
-      color: hsl(215 20% 65%);
-      transition: color 0.2s;
-    }
+      .socials a {
+        color: hsl(215 20% 65%);
+        transition: color 0.2s;
+      }
 
-    .socials a:hover {
-      color: #e8ecf2;
-    }
+      .socials a:hover {
+        color: #e8ecf2;
+      }
 
-    .socials svg {
-      width: 24px;
-      height: 24px;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="avatar-ring">
-      <img class="avatar" src="avatar.jpg" alt="@nhlanhlamalaza_">
+      .socials svg {
+        width: 24px;
+        height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="avatar-ring">
+        <img class="avatar" src="images/avatar.jpg" alt="@nhlanhlamalaza_" />
+      </div>
+
+      <h1>@nhlanhlamalaza_</h1>
+      <p class="bio">Links to my social media and services I offer.</p>
+
+      <div class="links">
+        <a class="link-card" href="mailto:n.malaza@proton.me">
+          <svg viewBox="0 0 24 24">
+            <rect width="20" height="16" x="2" y="4" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+          <span>Email</span>
+        </a>
+        <a
+          class="link-card"
+          href="https://njmtech.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+            <path d="M2 12h20" />
+          </svg>
+          <span>Official Website</span>
+        </a>
+        <a
+          class="link-card"
+          href="https://open.spotify.com/playlist/43MBkM2f043dPyBEhRuE8Z?si=01fc1ee143234754"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" stroke="none">
+            <path
+              d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424a.623.623 0 01-.857.208c-2.348-1.435-5.304-1.76-8.785-.964a.623.623 0 11-.277-1.215c3.809-.87 7.077-.496 9.712 1.115a.623.623 0 01.207.856zm1.223-2.722a.779.779 0 01-1.072.257c-2.687-1.652-6.785-2.131-9.965-1.166a.78.78 0 01-.973-.519.78.78 0 01.519-.972c3.632-1.102 8.147-.568 11.234 1.328a.78.78 0 01.257 1.072zm.105-2.835c-3.223-1.914-8.54-2.09-11.618-1.156a.935.935 0 11-.543-1.79c3.532-1.073 9.404-.866 13.115 1.337a.935.935 0 11-.954 1.609z"
+            />
+          </svg>
+          <span>Spotify playlist - ENDZ</span>
+        </a>
+      </div>
+
+      <div class="socials">
+        <a
+          href="https://x.com/nhlanhlamalaza_"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Twitter"
+        >
+          <svg fill="currentColor" stroke="none" viewBox="0 0 24 24">
+            <path
+              d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 001.88-2.38 8.59 8.59 0 01-2.72 1.04 4.28 4.28 0 00-7.29 3.9A12.14 12.14 0 013.16 4.86a4.28 4.28 0 001.32 5.71 4.24 4.24 0 01-1.94-.53v.05a4.28 4.28 0 003.43 4.19 4.27 4.27 0 01-1.93.07 4.28 4.28 0 004 2.97A8.58 8.58 0 012 19.54a12.1 12.1 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.37-.01-.56A8.72 8.72 0 0024 5.06a8.56 8.56 0 01-2.54.7z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://github.com/omoinjm"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <svg fill="currentColor" stroke="none" viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://instagram.com/nhlanhlamalaza_"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            viewBox="0 0 24 24"
+          >
+            <rect width="20" height="20" x="2" y="2" rx="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/njmalaza/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <svg fill="currentColor" stroke="none" viewBox="0 0 24 24">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://www.tiktok.com/@nhlanhlamalaza_"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="TikTok"
+        >
+          <svg fill="currentColor" stroke="none" viewBox="0 0 24 24">
+            <path
+              d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.75a8.18 8.18 0 004.76 1.52V6.84a4.84 4.84 0 01-1-.15z"
+            />
+          </svg>
+        </a>
+      </div>
     </div>
-
-    <h1>@nhlanhlamalaza_</h1>
-    <p class="bio">Links to my social media and services I offer.</p>
-
-    <div class="links">
-      <a class="link-card" href="mailto:n.malaza@proton.me">
-        <svg viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-        <span>Email</span>
-      </a>
-      <a class="link-card" href="https://njmtech.vercel.app/" target="_blank" rel="noopener noreferrer">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-        <span>Official Website</span>
-      </a>
-      <a class="link-card" href="https://open.spotify.com/playlist/43MBkM2f043dPyBEhRuE8Z?si=01fc1ee143234754" target="_blank" rel="noopener noreferrer">
-        <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424a.623.623 0 01-.857.208c-2.348-1.435-5.304-1.76-8.785-.964a.623.623 0 11-.277-1.215c3.809-.87 7.077-.496 9.712 1.115a.623.623 0 01.207.856zm1.223-2.722a.779.779 0 01-1.072.257c-2.687-1.652-6.785-2.131-9.965-1.166a.78.78 0 01-.973-.519.78.78 0 01.519-.972c3.632-1.102 8.147-.568 11.234 1.328a.78.78 0 01.257 1.072zm.105-2.835c-3.223-1.914-8.54-2.09-11.618-1.156a.935.935 0 11-.543-1.79c3.532-1.073 9.404-.866 13.115 1.337a.935.935 0 11-.954 1.609z"/></svg>
-        <span>Spotify playlist - ENDZ</span>
-      </a>
-    </div>
-
-    <div class="socials">
-      <a href="https://x.com/nhlanhlamalaza_" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-        <svg fill="currentColor" stroke="none" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 001.88-2.38 8.59 8.59 0 01-2.72 1.04 4.28 4.28 0 00-7.29 3.9A12.14 12.14 0 013.16 4.86a4.28 4.28 0 001.32 5.71 4.24 4.24 0 01-1.94-.53v.05a4.28 4.28 0 003.43 4.19 4.27 4.27 0 01-1.93.07 4.28 4.28 0 004 2.97A8.58 8.58 0 012 19.54a12.1 12.1 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.37-.01-.56A8.72 8.72 0 0024 5.06a8.56 8.56 0 01-2.54.7z"/></svg>
-      </a>
-      <a href="https://github.com/omoinjm" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <svg fill="currentColor" stroke="none" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
-      </a>
-      <a href="https://instagram.com/nhlanhlamalaza_" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-      </a>
-      <a href="https://www.linkedin.com/in/njmalaza/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <svg fill="currentColor" stroke="none" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-      </a>
-      <a href="https://www.tiktok.com/@nhlanhlamalaza_" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-        <svg fill="currentColor" stroke="none" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.75a8.18 8.18 0 004.76 1.52V6.84a4.84 4.84 0 01-1-.15z"/></svg>
-      </a>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
