@@ -1,41 +1,29 @@
-# NJMTECH bio link
+# njmtech-bio
 
-[https://njmbio.vercel.app/](https://njmbio.vercel.app/)
+A personal bio link page — a single, dependency-free HTML file.
 
-## Tutorial
-
-Watch how I built this website on YouTube:
-
-[![YouTube thumbnail](./doc/thumb.png)](https://www.youtube.com/watch?v=eFzNekhVhmM&t=3550s)
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🔗 **Live:** [https://njmbio.vercel.app/](https://njmbio.vercel.app/)
 
 ## Stack
 
-- [Next.js](https://nextjs.org/) - A React framework with hybrid static & server rendering, and route pre-fetching, etc.
-- [Tailwind](https://tailwindcss.com/) - The main feature of this CSS library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables.
+- Plain **HTML5** & **CSS3** — no frameworks, no build step
+- Deployed on [Vercel](https://vercel.com/)
+
+## Project structure
 
 ```
 $PROJECT_ROOT
-├── app
-│   ├── icons
-│   │   └── index.tsx
-│   ├── head.tsx
-│   ├── layout.tsx
-│   └── page.tsx
-│
-├── styles
-│   └── global.css
-│
-└── public
-    ├── icons
-    │   └── seo.png
-    │   └── ...
-    │
-    ├── favicon.ico
-    │
-    └── ...
+├── index.html   # The entire site — markup + styles
+├── avatar.jpg   # Profile photo
+└── doc/
+    └── thumb.png
 ```
+
+## Tutorial
+
+Watch how I built this on YouTube:
+
+[![YouTube thumbnail](./doc/thumb.png)](https://www.youtube.com/watch?v=eFzNekhVhmM&t=3550s)
 
 ## License
 
@@ -44,8 +32,9 @@ MIT License.
 You can create your own homepage for free without notifying me by forking this project under the following conditions:
 
 - Add a link to [my bio link](https://njmbio.vercel.app/)
-- Do not use the 3d voxel dog
+- Do not use my avatar photo
 
-Check out [LICENSE](./LICENSE) for more detail.
+See [LICENSE](./LICENSE) for full details.
+
 
 ---
